@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000; 
+    color: #fff;
+    margin: 0;
+    padding-bottom: 50px; 
+}
+
+header {
+    background-color: #087aa6;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #082478; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 20px;
+}
+
+.perfil {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.titulo h1 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding-top: 60px; 
+    margin-top: -60px; 
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 2px solid #087aa6; 
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    text-align: justify;
+}
+
+table th {
+    background-color: #000; 
+    color: #fff; 
+    border: 2px solid #087aa6;
+    text-align: center; 
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td {
+    background-color: #000; 
+    color: #fff; 
+    border: 2px solid #087aa6; 
+}
+
+td img {
+    width: 80px;
+    height: auto;
+}
+
+.competencias {
+    display: flex;
+    justify-content: space-between;
+}
+
+.competencias h3 {
+    margin-bottom: 0.5rem;
+}
+
+.competencias ul {
+    list-style: none;
+    padding: 0;
+}
+
+.competencias li {
+    margin: 5px 0;
+}
+
+.estrelas {
+    color: gold;
+    font-size: 1.2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 5px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #087aa6; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px; 
+    height: 30px;
+}
+form button:hover {
+    background-color: #082478; 
+}
+
+footer {
+    background-color: #087aa6; 
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+#contato ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-left: 20px;
+}
+
+#contato ul li {
+    margin: 5px 0;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contato label {
+    margin: 10px 0 5px;
+}
+
+#contato input,
+#contato textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#contato button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #087aa6;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contato button:hover {
+    background-color: #082478;
+}
+
+.formulariofinal {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ranking li::before {
+    content: counter(item) "° ";
+    counter-increment: item;
+}
+
+.ranking {
+    counter-reset: item;
+    list-style: none;
+    padding: revert-layer;
+}
+
+.ranking li {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
